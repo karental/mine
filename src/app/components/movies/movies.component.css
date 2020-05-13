@@ -1,0 +1,86 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+.movie_container {
+  align-self: center;
+  width: 48%;
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+.movie_poster {
+  height: 250px;
+}
+.movie_first_row {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 32px;
+}
+.movie_year {
+  color: #7552f6;
+  font-size: 28px;
+}
+.movie_plot {
+  margin: 25px 0px;
+  font-family: "Lato", sans-serif;
+  color: #7a7a7a;
+  font-size: 17px;
+}
+
+.movie_desc {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 65px;
+  min-width: 300px;
+}
+.message_error{
+  border: 2px red solid
+}
+@media only screen and (max-width: 500px) {
+  .movie_container {
+    margin: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .movie_first_row {
+    justify-content: flex-start;
+    font-size: 28px;
+  }
+  .movie_year {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-bottom: 1px;
+    align-self: flex-end;
+  }
+  .movie_plot {
+    margin: 10px;
+    font-size: 15px;
+  }
+  .movie_poster {
+    align-self: center;
+  }
+  .movie_desc {
+    margin: 0px;
+  }
+  .movie_plot {
+    margin: 0px;
+  }
+  :host {
+    margin: 10px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .movie_container {
+justify-content: center;
+  }
+  .movie_desc {
+
+    margin-right: 0px;
+  }
+}

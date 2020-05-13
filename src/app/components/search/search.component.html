@@ -1,0 +1,17 @@
+<app-logout></app-logout>
+<div class="search_container">
+  <div class="search_engine">
+    <input
+      #movieTitle
+      placeholder="Type a title here..."
+      (keyup.enter)="inputValidation(movieTitle.value)"
+    />
+    <app-error [message]="message"></app-error>
+  </div>
+
+  <button class="search_movie" (click)="inputValidation(movieTitle.value)">
+    Search
+  </button>
+</div>
+
+<app-movies *ngFor="let movie of movieData" [movie]="movie"></app-movies>

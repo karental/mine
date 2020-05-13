@@ -1,0 +1,10 @@
+
+
+:host {
+  align-self: center;
+  margin: auto;
+}
+
+.login_botton{
+  cursor: pointer;
+}

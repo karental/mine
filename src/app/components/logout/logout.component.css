@@ -1,0 +1,11 @@
+.logout {
+  margin: 10px 20px;
+  color: #7552f6;
+  font-family: "Lato", sans-serif;
+  text-decoration: underline;
+  cursor: pointer;
+}
+:host {
+  display: flex;
+  justify-content: flex-end;
+}
